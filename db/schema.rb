@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_06_09_155913) do
+ActiveRecord::Schema.define(version: 2023_06_09_160758) do
 
   create_table "boards", force: :cascade do |t|
     t.string "name"
@@ -24,6 +24,8 @@ ActiveRecord::Schema.define(version: 2023_06_09_155913) do
     t.string "title"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.boolean "favorite"
+    t.string "color"
   end
 
   create_table "tasks", force: :cascade do |t|
