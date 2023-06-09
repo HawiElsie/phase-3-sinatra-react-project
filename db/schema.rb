@@ -24,8 +24,8 @@ ActiveRecord::Schema.define(version: 2023_06_09_160758) do
     t.string "title"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.boolean "favorite"
-    t.string "color"
+    t.boolean "favourite"
+    t.string "colour"
   end
 
   create_table "tasks", force: :cascade do |t|
